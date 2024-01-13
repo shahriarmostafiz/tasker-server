@@ -22,13 +22,8 @@ cloudinary.config({
   api_secret: process.env.SECRET,
 });
 
-// pass: MRk4h6RSSu3FKvbR
-// admin : JOBTASKER ;
-
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const uri = process.env.URI;
-
-//   "mongodb+srv://JOBTASKER:MRk4h6RSSu3FKvbR@cluster1.rubdhat.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
